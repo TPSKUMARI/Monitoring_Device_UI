@@ -1082,8 +1082,8 @@ class MonitoringDevice(QMainWindow):
         
     def update_weather(self):
         try:
-            OPENWEATHERMAP_API_KEY = '382dd53601c32ec38ae0b61dad890a10'
-            url = f"https://api.openweathermap.org/data/2.5/weather?lat={self.latitude}&lon={self.longitude}&appid={OPENWEATHERMAP_API_KEY}&units=metric"
+            OPENWEATHERMAP_API_KEY = 'api_key'
+           # url = f"https://api.openweathermap.org/data/2.5/weather?lat={self.latitude}&lon={self.longitude}&appid={OPENWEATHERMAP_API_KEY}&units=metric"
             
             response = requests.get(url, timeout=10)
             
